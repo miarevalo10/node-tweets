@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  div.container-fluid
+   div.row
+    for object in objects
+      div.tweet.col-md-2  
+       div 
+        img(src=object.user.profile_image_url)
+        div #{object.user.name} : #{object.text}
+
+
+       
