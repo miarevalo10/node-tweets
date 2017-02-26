@@ -1,12 +1,11 @@
 
 var express = require('express');
 var router = express.Router();
-// var json = require('../tweets.json');
-var MongoClient = require('mongodb').MongoClient
-  , assert = require('assert');
+var MongoClient = require('mongodb').MongoClient, assert = require('assert');
 // var url = 'mongodb://localhost:27017/node_mongo2';
-//URI de mongo user:heroku_knrzcqhz pass:ap3a8guln2bbhqttkt81peu7k4
-var url = 'mongodb://heroku_knrzcqhz:ap3a8guln2bbhqttkt81peu7k4@ds161059.mlab.com:61059/heroku_knrzcqhz';
+
+//URI de mongo user:tweets-user pass:mongotweets
+var url = 'mongodb://tweets-user:mongotweets@ds161069.mlab.com:61069/node-tweets';
 /* GET home page. */
 router.get('/', function(req, res, next) {
   // console.log(json[1].text);
